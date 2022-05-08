@@ -13,6 +13,10 @@ const enKeyboard = [ '`','1','2','3','4','5','6','7','8','9','0','-','=','Backsp
                     'Shift','z','x','c','v','b','n','m',',','.', '/', '▲', 'Shift',
                     'Ctrl','Win','Alt',' ','Alt','◄','▼','►','Ctrl' ];
 
+const ruShiftKeyboard = ['Ё','!','"','№',';','%',':','?','*','(',')','_','+'];
+
+const enShiftKeyboard = ['~','!','@', '#', '$','%','^','&','*','(',')','_','+'];
+
 const containerEL = document.createElement('div');
 const textAreaEL = document.createElement('textarea');
 const keyboardEL = document.createElement('div');
@@ -118,7 +122,7 @@ let n = true;
 
 function runOnKeys(func, func1, ...codes) {
     let pressed = new Set();
-
+    
     document.addEventListener('keydown', function(event) {
       pressed.add(event.code);
 
@@ -142,7 +146,6 @@ function runOnKeys(func, func1, ...codes) {
     document.addEventListener('keyup', function(event) {
       pressed.delete(event.code);
     });
-
   }
 
 runOnKeys(
@@ -152,12 +155,23 @@ runOnKeys(
     "AltLeft"
 );
 
+runOnKeys(
+    () => shiftChange(ruShiftKeyboard),
+    () => shiftChange(enShiftKeyboard),
+    "ShiftLeft",
+);
+
 function changeLanguage(arr) {
     for(let i = 0; i<buttons.length; i++) {
         buttons[i].innerHTML = arr[i];
     }
 }
 
+function shiftChange(arr) {
+    for(let i = 0; i<arr.length; i++) {
+        buttons[i].innerHTML = arr[i];
+    } 
+}
 
 const buttons = document.querySelectorAll('.k-key');
 let textArea = document.querySelectorAll('textarea')[0];
@@ -204,6 +218,20 @@ buttons.forEach((elem) => {
             textArea.value = finText;
             textArea.focus();
             textArea.setSelectionRange(start, sel)
+        }
+
+        if(event.target.innerText == 'Shift') {   
+            if(n) {
+                event.target.addEventListener('mousedown', function(event) {
+                    shiftChange(enShiftKeyboard);
+                });
+            
+                event.target.addEventListener('mouseup', function(event) {
+                    for(let i = 0; i<enShiftKeyboard.length; i++) {
+                        buttons[i].innerHTML = enKeyboard[i];
+                    }
+                });
+            } 
         }
     })
 })
