@@ -48,15 +48,30 @@ button:nth-of-type(14) {
     text-transform: capitalize;
 }
 
+button:nth-of-type(14).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
+}
+
 button:nth-of-type(15) {
     width: 70px;
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
 }
 
+button:nth-of-type(15).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20);  
+}
+
 button:nth-of-type(29) {
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(29).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
 }
 
 button:nth-of-type(30) {
@@ -66,10 +81,20 @@ button:nth-of-type(30) {
     border-radius: 0;
 }
 
+button:nth-of-type(30).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20);
+}
+
 button:nth-of-type(42) {
     width: 120px;
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(42).active { 
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
 }
 
 button:nth-of-type(43) {
@@ -78,9 +103,19 @@ button:nth-of-type(43) {
     text-transform: capitalize;
 }
 
+button:nth-of-type(43).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
+}
+
 button:nth-of-type(54) {
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(54).active { 
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
 }
 
 button:nth-of-type(55) {
@@ -89,9 +124,19 @@ button:nth-of-type(55) {
     text-transform: capitalize;
 }
 
+button:nth-of-type(55).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
+}
+
 button:nth-of-type(56) {
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(56).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20);
 }
 
 button:nth-of-type(57) {
@@ -99,9 +144,19 @@ button:nth-of-type(57) {
     text-transform: capitalize;
 }
 
+button:nth-of-type(57).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
+}
+
 button:nth-of-type(58) {
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(58).active { 
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
 }
 
 button:nth-of-type(59) {
@@ -109,9 +164,19 @@ button:nth-of-type(59) {
     text-transform: capitalize;
 }
 
+button:nth-of-type(59).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20);  
+}
+
 button:nth-of-type(60) {
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(60).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
 }
 
 button:nth-of-type(61) {
@@ -119,9 +184,19 @@ button:nth-of-type(61) {
     text-transform: capitalize;
 }
 
+button:nth-of-type(61).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
+}
+
 button:nth-of-type(62) {
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(62).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20);  
 }
 
 button:nth-of-type(63) {
@@ -129,9 +204,19 @@ button:nth-of-type(63) {
     text-transform: capitalize;
 }
 
+button:nth-of-type(63).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
+}
+
 button:nth-of-type(64) {
     background-color: rgb(51, 50, 50);
     text-transform: capitalize;
+}
+
+button:nth-of-type(64).active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20);  
 }
 
 button:hover {
@@ -139,8 +224,8 @@ button:hover {
 }
 
 button:active {
-    border-radius: 20px;
     background-color: rgb(108, 202, 20);
+    border-radius: 20px;
 }
 
 .active {
