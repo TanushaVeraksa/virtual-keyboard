@@ -1,0 +1,157 @@
+.container {
+    width: 1000px;
+    height: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    margin:auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.textarea {
+    width: 100%;
+    height: 350px;
+    font-size: 30px;
+}
+
+button {
+    background-color: rgb(78, 78, 78);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    border-width: 0;
+    color: white;
+    font-size: 20px;
+    margin: 0 2px;
+}
+
+.keyboard {
+    background-color: rgb(139, 138, 138);
+    border: 3px solid black;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+button:nth-of-type(14) {
+    width: 120px;
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(15) {
+    width: 70px;
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(29) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(30) {
+    width: 120px;
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+    border-radius: 0;
+}
+
+button:nth-of-type(42) {
+    width: 120px;
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(43) {
+    width: 120px;
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(54) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(55) {
+    width: 120px;
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(56) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(57) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(58) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(59) {
+    width: 480px;
+    text-transform: capitalize;
+}
+
+button:nth-of-type(60) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(61) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(62) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(63) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:nth-of-type(64) {
+    background-color: rgb(51, 50, 50);
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: rgba(0, 128, 0, 0.342);
+}
+
+button:active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20);
+}
+
+.active {
+    border-radius: 20px;
+    background-color: rgb(108, 202, 20); 
+}
+
+.transform-upper {
+    text-transform: uppercase;
+}
+
+.transform-lower {
+    text-transform: lowercase;
+}
