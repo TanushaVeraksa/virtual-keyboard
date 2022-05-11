@@ -21,8 +21,15 @@ const containerEL = document.createElement('div');
 const textAreaEL = document.createElement('textarea');
 const keyboardEL = document.createElement('div');
 const h1EL = document.createElement('h1');
+const h3El = document.createElement('h3');
+const aEL = document.createElement('a');
+const spanEL = document.createElement('span');
 
 h1EL.innerText = 'RSS Виртуальная клавиатура';
+h3El.innerText = 'Change Language: Shift + Alt';
+aEL.href = 'https://github.com/TanushaVeraksa/virtual-keyboard/pull/2';
+aEL.innerText = 'https://github.com/TanushaVeraksa/virtual-keyboard/pull/2';
+spanEL.innerText = 'Pull Request: '
 
 containerEL.classList.add('container');
 textAreaEL.classList.add('textarea');
@@ -30,6 +37,9 @@ keyboardEL.classList.add('keyboard');
 
 containerEL.append(textAreaEL);
 containerEL.append(keyboardEL);
+containerEL.append(h3El);
+containerEL.append(spanEL);
+containerEL.append(aEL);
 bodyEL.prepend(h1EL)
 bodyEL.append(containerEL)
 
@@ -235,3 +245,4 @@ buttons.forEach((elem) => {
         }
     })
 })
+
